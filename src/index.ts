@@ -3,7 +3,7 @@ import path from "path";
 import fs from "fs/promises";
 import { ensureDir, writeFileWithRetry, pad } from "./utils.js";
 import { startDeliveryWorker } from "./worker.js";
-import { startRekapWorker } from "./workerRekap.js";  // <-- digunakan
+import { startRekapWorker } from "./workerRekap.js"
 
 const app = express();
 app.use(express.json());
@@ -11,7 +11,7 @@ app.use(express.json());
 const BASE_DB = path.join(process.cwd(), "database");
 const CUSTOMER_DIR = path.join(BASE_DB, "customer-order");
 const DELIVERED_DIR = path.join(BASE_DB, "delivered-order");
-const REKAP_DIR = path.join(BASE_DB, "rekap-order");   // <-- digunakan
+const REKAP_DIR = path.join(BASE_DB, "rekap-order");
 
 const customerLocks: Map<number, Promise<any>> = new Map();
 
