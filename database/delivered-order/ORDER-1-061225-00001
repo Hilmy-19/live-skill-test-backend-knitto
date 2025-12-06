@@ -1,0 +1,14 @@
+{
+  "orderNumber": "ORDER-1-061225-00001",
+  "customerId": 1,
+  "items": [
+    {
+      "sku": "A01",
+      "qty": 2
+    }
+  ],
+  "total": 50000,
+  "status": "Dikirim ke customer",
+  "createdAt": "2025-12-06T02:50:42.502Z",
+  "updatedAt": "2025-12-06T02:50:42.585Z"
+}
