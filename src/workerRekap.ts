@@ -1,14 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
 
-/**
- * Worker rekap order: berjalan setiap 5 detik.
- * Menggabungkan order dari delivered-order ke file:
- * REKAP-ORDER-DDMMYY.json
- *
- * Worker juga memastikan file tidak direkap ulang
- * dengan menyimpan daftar filename yang sudah diproses.
- */
 export function startRekapWorker(baseDir: string) {
     const deliveredDir = path.join(baseDir, "delivered-order");
     const rekapDir = path.join(baseDir, "rekap-order");

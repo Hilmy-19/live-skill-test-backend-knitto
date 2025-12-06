@@ -109,13 +109,12 @@ async function init() {
 
     console.log("Workers akan mulai...");
 
-    // Worker delivery mulai setelah 10 detik
     setTimeout(() => {
         console.log("Worker Delivery dimulai.");
         startDeliveryWorker(BASE_DB);
     }, 10000);
 
-    // Worker rekap mulai setelah 15 detik (lebih lambat 5 detik)
+
     setTimeout(() => {
         console.log("Worker Rekap dimulai.");
         startRekapWorker(BASE_DB);
